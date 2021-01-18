@@ -4,7 +4,7 @@
 \alias{dist_betw_arrays}
 \title{Distance between rows of two arrays}
 \usage{
-dist_betw_arrays(x, y, distance = c("rmsd", "mad"), cores = 1)
+dist_betw_arrays(x, y, distance = c("rmsd", "mad", "propdiff"), cores = 1)
 }
 \arguments{
 \item{x}{A numeric array.}
@@ -12,8 +12,8 @@ dist_betw_arrays(x, y, distance = c("rmsd", "mad"), cores = 1)
 \item{y}{A second numeric array, with the same dimensions as \code{x}.}
 
 \item{distance}{Indicates whether to use Euclidean distance
-(\code{"rmsd"} for root mean square difference) or the mean absolute
-difference (\code{"mad"}).}
+(\code{"rmsd"} for root mean square difference), the mean absolute
+difference (\code{"mad"}), or the proportion of differences (\code{"propdiff"}).}
 
 \item{cores}{Number of CPU cores to use, for parallel calculations.
 (If \code{0}, use \code{\link[parallel:detectCores]{parallel::detectCores()}}.)
@@ -23,7 +23,7 @@ produced by \code{\link[parallel:makeCluster]{parallel::makeCluster()}}.}
 \value{
 If \code{x} and \code{y} have \code{m} and \code{n} rows, respectively, the
 result is an \code{m} by \code{n} matrix whose (i,j)th element is the
-distance between the ith column of \code{x} and the jth column of
+distance between the ith row of \code{x} and the jth row of
 \code{y}.
 }
 \description{

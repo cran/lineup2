@@ -6,8 +6,8 @@
 #' @param x A numeric array.
 #' @param y A second numeric array, with the same dimensions as `x`.
 #' @param distance Indicates whether to use Euclidean distance
-#'     (`"rmsd"` for root mean square difference) or the mean absolute
-#'     difference (`"mad"`).
+#'     (`"rmsd"` for root mean square difference), the mean absolute
+#'     difference (`"mad"`), or the proportion of differences (`"propdiff"`).
 #' @param cores Number of CPU cores to use, for parallel calculations.
 #' (If `0`, use [parallel::detectCores()].)
 #' Alternatively, this can be links to a set of cluster sockets, as
@@ -21,7 +21,7 @@
 #'
 #' @return If `x` and `y` have `m` and `n` rows, respectively, the
 #' result is an `m` by `n` matrix whose (i,j)th element is the
-#' distance between the ith column of `x` and the jth column of
+#' distance between the ith row of `x` and the jth row of
 #' `y`.
 #'
 #' @examples
@@ -39,7 +39,7 @@
 #' @seealso [dist_betw_matrices()], [corr_betw_matrices()]
 #' @export
 dist_betw_arrays <-
-    function(x,y, distance=c("rmsd", "mad"), cores=1)
+    function(x,y, distance=c("rmsd", "mad", "propdiff"), cores=1)
 {
     distance <- match.arg(distance)
 

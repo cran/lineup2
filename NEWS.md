@@ -1,3 +1,16 @@
+## lineup2 0.4 (2021-01-18)
+
+- Added function `plot_sample()` for plotting a selected row or column
+  from a distance/similarity matrix.
+
+- Added option `distance="propdiff"` to `dist_betw_matrices()` and
+  `dist_betw_arrays()`.
+
+- Fixed typo in help file for `dist_betw_arrays()`.
+
+- Removed use of svg in vignette.
+
+
 ## lineup2 0.2-5 (2020-10-31)
 
 - Added argument `threshold` to `get_problems()`

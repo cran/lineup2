@@ -1,5 +1,5 @@
 ## ----knitr_options, include=FALSE---------------------------------------------
-knitr::opts_chunk$set(fig.width=7, fig.height=4.5, dev="svg")
+knitr::opts_chunk$set(fig.width=7, fig.height=4.5)
 old_digits <- options("digits")$digits
 options(digits=3)
 
