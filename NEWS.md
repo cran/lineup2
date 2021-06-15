@@ -1,3 +1,10 @@
+## lineup2 0.6 (2021-06-14)
+
+- Revised `plot_sample()` to allow specification of `xlim` and `ylim`.
+
+- Updated vignette to show use of `plot_sample()` (Issue #8).
+
+
 ## lineup2 0.4 (2021-01-18)
 
 - Added function `plot_sample()` for plotting a selected row or column

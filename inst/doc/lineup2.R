@@ -79,16 +79,8 @@ which_best(corr_betw_samples, get_min=FALSE, dimension="column")["Mouse3296"]
 ## ----plot_six_samples, fig.height=6.5-----------------------------------------
 samples <- sort(c(names(self)[best_bycol-self > 0.2], "Mouse3295"))
 par(mfrow=c(3,2), las=1, mar=c(4.1, 4.1, 2.1, 0.6))
-rn <- rownames(corr_betw_samples)
-green <- "#2ecc40"
-red <- "#ff4136"
 for(sample in samples) {
-    plot(corr_betw_samples[,sample], xlab="Index", ylab="Correlation",
-         main=sample, pch=16, ylim=range(corr_betw_samples))
-    mx <- which.max(corr_betw_samples[,sample])
-    points(mx, corr_betw_samples[mx,sample], pch=16, col=red)
-    text(mx-8, corr_betw_samples[mx, sample], names(mx), adj=c(1, 0.5))
-    points(which(rn==sample), corr_betw_samples[sample,sample], pch=16, col=green)
+    plot_sample(corr_betw_samples, sample, "column", get_min=FALSE)
 }
 
 ## ----second_best_by_row_and_col-----------------------------------------------
@@ -96,6 +88,7 @@ secbest_byrow <- get_2ndbest(corr_betw_samples, get_min=FALSE, dimension="row")
 secbest_bycol <- get_2ndbest(corr_betw_samples, get_min=FALSE, dimension="column")
 
 ## ----sec_best_vs_best---------------------------------------------------------
+red <- "#ff4136"
 par(mfrow=c(1,2), mar=c(4.1, 4.1, 1.6, 0.6), las=1)
 plot(best_byrow, secbest_byrow, xlab="Best islet correlation",
      ylab="Second best islet correlation",

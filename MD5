@@ -1,6 +1,6 @@
-8337bf2ad5c124512710d7716d6cdbab *DESCRIPTION
+2ceda91a5cf0243cbf31d8e6d250f941 *DESCRIPTION
 4ee0db4d7ba4071b59fd215b8930ee17 *NAMESPACE
-c99afb44325ee7e2c476bc08245c40ac *NEWS.md
+226daf8accf7e72142d225e518eba653 *NEWS.md
 8b83d1f714a9157ba585aea59a9ab0bb *R/RcppExports.R
 a835f5ea1ba316bdc556746a9c8fb612 *R/align_matrices.R
 c1615a0b2f0fc28e653cae7bb8c9ae81 *R/cluster_util.R
@@ -15,16 +15,16 @@ a781481421550b8cb69871d7fcaf4caa *R/get_nonself.R
 af3ac8e9627ef2bf29c510c81acaa85e *R/hist_self_nonself.R
 bdec280206c983063399c79302940961 *R/lineup2-package.R
 e88864e5fa742973a56111fa2345427e *R/lineup2ex-data.R
-db55a2ab03e92797ccfd4be0a957c1b2 *R/plot_sample.R
+49a3485c9f75f2dfea0489ae7ce87961 *R/plot_sample.R
 a4b216a29e0f6ac1635ee06f9bbf943b *R/test_util.R
 e1b09e85d126c6e3be78b2d136cbed91 *R/which_2ndbest.R
 be19d5c1f4b4ac07b250ae3f5b1fbda9 *R/which_best.R
 8b8a7ce237c4b76ade6b1890d34ec57b *README.md
-39dfb0c5ab3264441e3a093c0581ce19 *build/vignette.rds
-89a76a6dfa77ce63f713efd3a2363c02 *data/lineup2ex.RData
-371c7a19dc4a85bc4bd3396528dce185 *inst/doc/lineup2.R
-2e8f8ace13aa1b8015cab6208e1d3c09 *inst/doc/lineup2.Rmd
-349324add646fab24a41641b461c83c3 *inst/doc/lineup2.html
+9bbab73c3d82bbdc0cbd2f256077868c *build/vignette.rds
+2106a709a13ba45bae00a0520695a4d4 *data/lineup2ex.RData
+dfd8e06493235104ab95539012bf0b31 *inst/doc/lineup2.R
+21197b15973f02d91183f83a40325963 *inst/doc/lineup2.Rmd
+af9ee362bc785864f4bfeb1418f5ac7a *inst/doc/lineup2.html
 83ef17a2c7305405490d985bb725ba34 *inst/scripts/create_lineup2ex.R
 d8d2a5119f676d909c9c5b10a4af3e34 *inst/scripts/create_lineup2ex.Rout
 3fe80dd21ba37bc0ae5985c8e716abf6 *man/align_matrix_cols.Rd
@@ -57,4 +57,4 @@ d860a1d1c0a423a81fd19dd68ca2dd7b *src/fscale.cpp
 d40deaa3590c27f9ddf02e17052e3089 *tests/testthat/test-dist_betw_matrices.R
 53c40ef7605e54a6014581487976d260 *tests/testthat/test-fscale.R
 9318ef12e6c1d06f873ea58ab2d51d76 *tests/testthat/test-get_dist.R
-2e8f8ace13aa1b8015cab6208e1d3c09 *vignettes/lineup2.Rmd
+21197b15973f02d91183f83a40325963 *vignettes/lineup2.Rmd
